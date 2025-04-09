@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroHogar | Tienda Premium de Electrodomésticos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <i class="fas fa-bolt logo-icon"></i>
+                <div class="logo-text">ElectroHogar</div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="ofertas.html">Ofertas</a>
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-search nav-icon" id="search-icon"></i>
+                <i class="fas fa-shopping-cart nav-icon" id="cart-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tecnología Premium para tu Hogar</h1>
+            <p>Descubre nuestra selección exclusiva de electrodomésticos de alta gama para transformar tu espacio.</p>
+            <button class="hero-btn" id="ver-productos-btn">Ver Productos</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categorias-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="refrigeracion">
+                    <div class="category-img">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Refrigeración</h3>
+                        <p>Refrigeradores, congeladores y más</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="televisores">
+                    <div class="category-img">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Televisores</h3>
+                        <p>Smart TVs, OLED, QLED y más</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="cocina">
+                    <div class="category-img">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Cocina</h3>
+                        <p>Estufas, hornos y microondas</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="lavanderia">
+                    <div class="category-img">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Lavandería</h3>
+                        <p>Lavadoras, secadoras y más</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured" id="productos-section">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <!-- Imagen 5: Refrigerador -->
+                        <img src="refri.jpg" alt="Refrigerador Smart">
+                        <span class="product-badge">NUEVO</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Refrigeración</div>
+                        <h3 class="product-name">Refrigerador Smart Inverter</h3>
+                        <div class="product-price">$1,299.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <!-- Imagen 4: Televisor LG -->
+                        <img src="smart_tv.webp" alt="Smart TV">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Televisores</div>
+                        <h3 class="product-name">Smart TV 4K 55"</h3>
+                        <div class="product-price">$899.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <!-- Imagen 3: Lavadora Electrolux -->
+                        <img src="lavadora.webp" alt="Lavadora">
+                        <span class="product-badge">OFERTA</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Lavandería</div>
+                        <h3 class="product-name">Lavadora Inteligente 12kg</h3>
+                        <div class="product-price">$749.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <!-- Imagen 2: Microondas Electrolux -->
+                        <img src="microondas.jpg" alt="Microondas">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cocina</div>
+                        <h3 class="product-name">Horno Microondas Digital</h3>
+                        <div class="product-price">$199.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="ofertas-section">
+        <div class="container">
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <h2>Oferta Especial</h2>
+                    <p>Aprovecha hasta 30% de descuento en todos los electrodomésticos de cocina. ¡Promoción por tiempo limitado!</p>
+                    <button class="offer-btn" id="ver-promocion-btn">Ver Promoción</button>
+                </div>
+                <div class="offer-image">
+                    <!-- Imagen 1: Etiqueta de oferta especial -->
+                    <img src="oferta.jpg" alt="Oferta especial">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Los electrodomésticos que compré superaron todas mis expectativas. La calidad es excepcional y el servicio de entrega fue muy profesional.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Cliente desde 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Encontré exactamente lo que necesitaba para mi nueva cocina. Los precios son competitivos y las opciones de financiamiento muy convenientes.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Martínez</h4>
+                            <p>Cliente desde 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">El soporte post-venta es excelente. Tuve un pequeño problema con mi refrigerador y lo solucionaron de inmediato. ¡Recomendado 100%!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana López</h4>
+                            <p>Cliente desde 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <p>Recibe noticias sobre nuevos productos, ofertas exclusivas y consejos útiles para tus electrodomésticos.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ElectroHogar</h3>
+                    <p>Tu destino confiable para electrodomésticos de alta calidad que transforman tu hogar con tecnología avanzada y diseño elegante.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="categorias.html">Productos</a></li>
+                        <li><a href="ofertas.html">Ofertas Especiales</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Atención al Cliente</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="envios.html">Envíos y Entregas</a></li>
+                        <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+                        <li><a href="garantias.html">Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@electrohogar.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ElectroHogar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

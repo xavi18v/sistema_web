@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas | ElectroHogar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="container navbar-content">
+        <div class="logo">
+            <i class="fas fa-bolt logo-icon"></i>
+            <div class="logo-text">ElectroHogar</div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="ofertas.html" class="active">Ofertas</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-search nav-icon" id="search-icon"></i>
+            <i class="fas fa-shopping-cart nav-icon" id="cart-icon"></i>
+        </div>
+    </div>
+</nav>
+
+    <!-- Page Header -->
+    <section class="page-header offers-header">
+        <div class="container">
+            <h1>Ofertas y Promociones</h1>
+            <p>Aprovecha los mejores descuentos en nuestros productos de calidad</p>
+        </div>
+    </section>
+
+    <!-- Current Offers -->
+    <section class="current-offers">
+        <div class="container">
+            <div class="offer-banner special">
+                <div class="offer-content">
+                    <h2>¡Gran Oferta del Mes!</h2>
+                    <p>Hasta 40% de descuento en toda la gama de refrigeradores. ¡Solo hasta agotar existencias!</p>
+                    <button class="offer-btn" id="ver-oferta-especial">Ver Detalles</button>
+                </div>
+                <div class="offer-image">
+                    <img src="oferta.jpg" alt="Oferta especial">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="offers-grid-section">
+        <div class="container">
+            <h2 class="section-title">Productos en Oferta</h2>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="refrigeracion">Refrigeración</button>
+                <button class="filter-btn" data-filter="lavanderia">Lavandería</button>
+                <button class="filter-btn" data-filter="cocina">Cocina</button>
+                <button class="filter-btn" data-filter="televisores">Televisores</button>
+            </div>
+            <div class="products-grid offers">
+                <div class="product-card" data-category="lavanderia">
+                    <div class="product-img">
+                        <img src="lavadora.webp" alt="Lavadora">
+                        <span class="product-badge">30% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Lavandería</div>
+                        <h3 class="product-name">Lavadora Inteligente 12kg</h3>
+                        <div class="product-price"><span class="original-price">$999.99</span> $749.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="refrigeracion">
+                    <div class="product-img">
+                        <img src="refri.jpg" alt="Refrigerador">
+                        <span class="product-badge">25% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Refrigeración</div>
+                        <h3 class="product-name">Refrigerador No Frost 300L</h3>
+                        <div class="product-price"><span class="original-price">$1200.00</span> $899.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cocina">
+                    <div class="product-img">
+                        <img src="cocina.webp" alt="Cocina">
+                        <span class="product-badge">40% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cocina</div>
+                        <h3 class="product-name">Cocina de Inducción</h3>
+                        <div class="product-price"><span class="original-price">$1500.00</span> $899.99</div>
+                        <div class="product-bottom">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
